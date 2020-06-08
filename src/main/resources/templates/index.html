@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Motor Sale Co.™</h1>
+<p>Welcome on our very best car sale website</p>
+<table>
+    <thead>
+    <tr><th>year</th><th>brand</th><th>model</th><th>price</th></tr>
+    </thead>
+    <tbody>
+    <tr th:each="car: ${cars}">
+        <td th:text="${car.year}"/>
+        <td th:text="${car.brand}"/>
+        <td th:text="${car.model}"/>
+        <td th:text="${car.price}"/>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
