@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car details</title>
+</head>
+<body>
+<h1>Motor Sale Co.™</h1>
+<span th:text="${car.description}"/>
+<p>brand: <span th:text="${car.brand}"/></p>
+<p>model: <span th:text="${car.model}"/></p>
+<p>built in: <span th:text="${car.year}"/></p>
+<p>price: <span th:text="${car.price}"/></p>
+<p>status: <span th:text="${car.status}"/></p>
+<p>fuelType: <span th:text="${car.fuelType}"/></p>
+<p>mileage: <span th:text="${car.mileage}"/></p>
+<p>transmissionType: <span th:text="${car.transmissionType}"/></p>
+
+</body>
+</html>

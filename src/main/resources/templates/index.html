@@ -11,7 +11,7 @@
 <p>Welcome on our very best car sale website</p>
 <table>
     <thead>
-    <tr><th>year</th><th>brand</th><th>model</th><th>price</th></tr>
+    <tr><th>Built in (year)</th><th>brand</th><th>model</th><th>price</th></tr>
     </thead>
     <tbody>
     <tr th:each="car: ${cars}">
@@ -19,6 +19,7 @@
         <td th:text="${car.brand}"/>
         <td th:text="${car.model}"/>
         <td th:text="${car.price}"/>
+        <td ><a th:href="@{/car/{id}(id=${car.id})}">show more</a></td>
     </tr>
     </tbody>
 </table>
