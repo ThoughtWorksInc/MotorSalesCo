@@ -9,6 +9,7 @@
 <body>
     <h1>Motor Sale Co.™</h1>
 <p>Welcome on our very best car sale website</p>
+    <div th:insert="filter :: show(options=${filterOptions})"/>
 <table>
     <thead>
     <tr><th>Built in (year)</th><th>brand</th><th>model</th><th>price</th></tr>

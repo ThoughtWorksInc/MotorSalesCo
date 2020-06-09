@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="show (options)">
+    <p th:text="${options.currentFilter}"/>
+    <form th:action="@{/filter}" method="post">
+        <div th:each="filter: ${options.brandFilterOptions}">
+            <p><label>
+                <input type="checkbox" name="brand" th:value="${filter.key}">
+                <span th:text="${filter.key}"/> (<span th:text="${filter.value}"/>)
+            </label></p>
+        </div>
+        <input type="submit" name="filter">
+    </form>
+</div>
+
+</body>
+
+</html>
