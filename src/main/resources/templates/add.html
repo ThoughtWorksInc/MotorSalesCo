@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div>
+    <p>Add new vehicle</p>
+    <form th:action="@{/add}" method="post">
+        <p><label>Brand:<input type="input" name="brand"></label></p>
+        <p><label>Model:<input type="input" name="model"></label></p>
+        <p><label>Description:<input type="input" name="description"></label></p>
+        <p><label>Built :<input type="input" name="built"></label></p>
+        <p><label>Price:<input type="input" name="price"></label></p>
+        <p><label>Status:<input type="input" name="status"></label></p>
+        <p><label>FuelType:<input type="input" name="fuelType"></label></p>
+        <p><label>Mileage:<input type="input" name="mileage"></label></p>
+        <p><label>TransmissionType:<input type="input" name="transmissionType"></label></p>
+        <input type="submit" name="filter">
+    </form>
+</div>
+
+</body>
+
+</html>

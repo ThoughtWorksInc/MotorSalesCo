@@ -42,7 +42,7 @@ public class IndexController {
     }
 
     @GetMapping("/add")
-    public String add(Model model){
+    public String add(@ModelAttribute Car car, Model model){
         //FIXME testing security
         return index(model);
     }
